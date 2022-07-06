@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+     appname: acmeair 
+  name: acmeair-main-route
+spec:
+  path: /acmeair
+  to:
+    kind: Service
+    name: acmeair-main-service
+    weight: 100
+  wildcardPolicy: None

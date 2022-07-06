@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: acmeair-auth-service
+  labels:
+     appname: acmeair 
+spec:
+  ports:
+  - port: 9080
+    protocol: TCP
+    targetPort: 9080
+  selector:
+    name: acmeair-auth-deployment
+  type: ClusterIP

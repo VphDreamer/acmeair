@@ -1,0 +1,8 @@
+---
+resources:
+  - acmeair-customer-db-1-vol-deploy.yaml
+  - acmeair-customer-db-2-vol-deploy.yaml 
+  - acmeair-flight-db-1-vol-deploy.yaml
+  - acmeair-flight-db-2-vol-deploy.yaml 
+  - acmeair-booking-db-1-vol-deploy.yaml 
+  - acmeair-booking-db-2-vol-deploy.yaml
